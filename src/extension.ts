@@ -1,5 +1,9 @@
-import { ExtensionContext } from "vscode";
+import { ExtensionContext } from 'vscode'
 
 export async function activate(context: ExtensionContext) {
-  console.log(context)
+  console.log('activate')
+}
+
+export function deactivate(): void {
+  console.log('deactivate')
 }
