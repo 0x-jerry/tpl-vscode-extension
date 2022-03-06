@@ -1,0 +1,53 @@
+{
+  "name": "tpl-vscode-extension",
+  "displayName": "Vscode extension template",
+  "description": "template",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": {
+    "name": "Jerry wang",
+    "email": "x.jerry.wang@gmail.com"
+  },
+  "publisher": "fantasy",
+  "engines": {
+    "vscode": "^1.41.1"
+  },
+  "categories": [],
+  "keywords": [],
+  "activationEvents": [],
+  "main": "./dist/extension.js",
+  "extensionKind": [
+    "ui",
+    "workspace"
+  ],
+  "contributes": {
+    "configuration": {},
+    "commands": [],
+    "keybindings": [],
+    "viewsContainers": {},
+    "views": {},
+    "menus": {},
+    "grammars": [],
+    "snippets": []
+  },
+  "scripts": {
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r",
+    "vscode:prepublish": "tsup src/extension.ts --sourcemap",
+    "build": "tsup src/extension.ts --sourcemap",
+    "dev": "tsup src/extension.ts --sourcemap --watch",
+    "publish": "vsce publish --no-dependencies",
+    "release": "x-release"
+  },
+  "peerDependencies": {
+    "vscode": "*"
+  },
+  "devDependencies": {
+    "@0x-jerry/x-release": "^0.3.2",
+    "@types/node": "^15.14.9",
+    "@types/vscode": "^1.41.1",
+    "conventional-changelog-cli": "^2.2.2",
+    "tsup": "^5.11.11",
+    "typescript": "^4.5.5",
+    "vsce": "^2.6.7"
+  }
+}
