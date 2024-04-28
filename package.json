@@ -10,7 +10,7 @@
   },
   "publisher": "fantasy",
   "engines": {
-    "vscode": "^1.41.1"
+    "vscode": "^1.60.0"
   },
   "categories": [],
   "keywords": [],
@@ -31,23 +31,28 @@
     "snippets": []
   },
   "scripts": {
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r",
-    "vscode:prepublish": "tsup src/extension.ts --sourcemap",
-    "build": "tsup src/extension.ts --sourcemap",
-    "dev": "tsup src/extension.ts --sourcemap --watch",
+    "vscode:prepublish": "tsup",
+    "build": "tsup",
+    "dev": "tsup --watch",
     "publish": "vsce publish --no-dependencies",
     "release": "x-release"
   },
-  "peerDependencies": {
-    "vscode": "*"
+  "tsup": {
+    "entry": [
+      "src/extension.ts"
+    ],
+    "sourcemap": true,
+    "clean": true,
+    "external": [
+      "vscode"
+    ]
   },
   "devDependencies": {
-    "@0x-jerry/x-release": "^0.3.6",
-    "@types/node": "^18.11.18",
-    "@types/vscode": "^1.74.0",
-    "@vscode/vsce": "^2.16.0",
-    "conventional-changelog-cli": "^2.2.2",
-    "tsup": "^6.5.0",
-    "typescript": "^4.9.4"
+    "@0x-jerry/x-release": "^1.0.0",
+    "@types/node": "^20.12.7",
+    "@types/vscode": "^1.60.0",
+    "@vscode/vsce": "^2.26.0",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.5"
   }
 }
