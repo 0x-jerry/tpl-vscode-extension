@@ -3,6 +3,9 @@
   "tasks": [
     {
       "type": "npm",
+      "script": "build",
+      "label": "npm: build",
+      "detail": "build extension",
       "isBackground": true,
       "problemMatcher": {
         "owner": "tsup",
@@ -21,9 +24,14 @@
           "endsPattern": ".+ Build success in .+"
         }
       },
-      "script": "dev",
-      "label": "npm: dev",
-      "detail": "tsup src/extension.ts --sourcemap --watch"
+      "presentation": {
+        "echo": true,
+        "reveal": "never",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
     }
   ]
 }

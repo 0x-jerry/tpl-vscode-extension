@@ -15,11 +15,7 @@
         "--disable-extensions"
       ],
       "outFiles": ["${workspaceFolder}/dist/**/*.js"],
-      "preLaunchTask": "npm: dev",
-      "env": {
-        "DEBUG": "vscode-remote-snippets:*",
-        "NODE_ENV": "development"
-      }
+      "preLaunchTask": "npm: build"
     }
   ]
 }
