@@ -16,7 +16,7 @@ devDependencies:
     version: 1.89.0
   '@vscode/vsce':
     specifier: ^2.26.1
-    version: 2.26.1
+    version: 2.27.0
   tsup:
     specifier: ^8.0.2
     version: 8.0.2(typescript@5.4.5)
@@ -138,8 +138,8 @@ packages:
       '@azure/core-tracing': 1.1.2
       '@azure/core-util': 1.9.0
       '@azure/logger': 1.1.2
-      '@azure/msal-browser': 3.14.0
-      '@azure/msal-node': 2.8.1
+      '@azure/msal-browser': 3.16.0
+      '@azure/msal-node': 2.9.1
       events: 3.3.0
       jws: 4.0.0
       open: 8.4.2
@@ -156,23 +156,23 @@ packages:
       tslib: 2.6.2
     dev: true
 
-  /@azure/msal-browser@3.14.0:
-    resolution: {integrity: sha512-Un85LhOoecJ3HDTS3Uv3UWnXC9/43ZSO+Kc+anSqpZvcEt58SiO/3DuVCAe1A3I5UIBYJNMgTmZPGXQ0MVYrwA==}
+  /@azure/msal-browser@3.16.0:
+    resolution: {integrity: sha512-WKobvIisBK7sFSOwHuchH9tUMekwhJRLgLE9tKhIq0wFYGRcVGK0KivP5vZrobVZEMNCZWto0fI1VcSVoa+cig==}
     engines: {node: '>=0.8.0'}
     dependencies:
-      '@azure/msal-common': 14.10.0
+      '@azure/msal-common': 14.11.0
     dev: true
 
-  /@azure/msal-common@14.10.0:
-    resolution: {integrity: sha512-Zk6DPDz7e1wPgLoLgAp0349Yay9RvcjPM5We/ehuenDNsz/t9QEFI7tRoHpp/e47I4p20XE3FiDlhKwAo3utDA==}
+  /@azure/msal-common@14.11.0:
+    resolution: {integrity: sha512-B6+IKLFs7Lsr06vjX8dPN61ENpTgiFrHf+CVo1UasHcmk5uEOq5D4thrbjsauKX+xtFryYsCDtznVDmWS4/sCg==}
     engines: {node: '>=0.8.0'}
     dev: true
 
-  /@azure/msal-node@2.8.1:
-    resolution: {integrity: sha512-VcZZM+5VvCWRBTOF7SxMKaxrz+EXjntx2u5AQe7QE06e6FuPJElGBrImgNgCh5QmFaNCfVFO+3qNR7UoFD/Gfw==}
+  /@azure/msal-node@2.9.1:
+    resolution: {integrity: sha512-I9Pc78mXwj/K8ydSgTfZ5A20vQ/xvfgnnhSCkienZ29b59zFy/hb2Vxmc6Gvg5pNkimSqkPnAtGoBMxYOLBm1A==}
     engines: {node: '>=16'}
     dependencies:
-      '@azure/msal-common': 14.10.0
+      '@azure/msal-common': 14.11.0
       jsonwebtoken: 9.0.2
       uuid: 8.3.2
     dev: true
@@ -1019,12 +1019,100 @@ packages:
     resolution: {integrity: sha512-TMfGKLSVxfGfoO8JfIE/neZqv7QLwS4nwPwL/NwMvxtAY2230H2I4Z5xx6836pmJvMAzqooRQ4pmLm7RUicP3A==}
     dev: true
 
-  /@vscode/vsce@2.26.1:
-    resolution: {integrity: sha512-QOG6Ht7V93nhwcBxPWcG33UK0qDGEoJdg0xtVeaTN27W6PGdMJUJGTPhB/sNHUIFKwvwzv/zMAHvDgMNXbcwlA==}
+  /@vscode/vsce-sign-alpine-arm64@2.0.1:
+    resolution: {integrity: sha512-HM2BHzyRKoUHVaaVmLFYcKlnMOcUAfU99oA1yAWX46D6iLZ8rWJYy2IOKTSMOXtVoc5d2hQdZR4+BCV5By4Flg==}
+    cpu: [arm64]
+    os: [alpine]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@vscode/vsce-sign-alpine-x64@2.0.1:
+    resolution: {integrity: sha512-GNh4dNmqwQqEDP2ngUgdu5ZYkJZAHomTppMI0v9sveFoZdML5iWuNGemvCEyInUpSb6Xjxc78ejeMoDay22wBw==}
+    cpu: [x64]
+    os: [alpine]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@vscode/vsce-sign-darwin-arm64@2.0.1:
+    resolution: {integrity: sha512-iFnCbC8RBUyT0ZKEmop5yi7/NxP5G2gIW/giJHYDYppkhfyAR5STxlpf8Vx9hqIS0jPbeldNSn5a5BGMKtGXug==}
+    cpu: [arm64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@vscode/vsce-sign-darwin-x64@2.0.1:
+    resolution: {integrity: sha512-Dpv3PRpOzfDpji9JGVxe+hHyh41evyquMeXYykkTdcB3u3bZMoAgYoBlEOGnu87xb4s2J5DTj/J590yN0+dI0A==}
+    cpu: [x64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@vscode/vsce-sign-linux-arm64@2.0.1:
+    resolution: {integrity: sha512-SL6MeobrArp5SKPeUYVr5chp7a42L83vYAzLvD+oQM8fQ8DrZWYpNIyVkxGgsppZRyAt0UU2/5ShPxuNKfnZOA==}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@vscode/vsce-sign-linux-arm@2.0.1:
+    resolution: {integrity: sha512-iltMQuS8K63aIabVrPBB8P2L37XkSwUqPTFLYlH6Bw+UpWJTFFvFFCKlmbxWrq1j8WkG+68Fm437ZfAkRW/rjQ==}
+    cpu: [arm]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@vscode/vsce-sign-linux-x64@2.0.1:
+    resolution: {integrity: sha512-6N6dkZoJX/WKezZ3efCKVKjnbx+TlnUtNUkepyUUhCa3dGjGDqUkeakE2Kz266Bsp0Mm/68zS9HLKVOEv9vn0A==}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@vscode/vsce-sign-win32-arm64@2.0.1:
+    resolution: {integrity: sha512-t4uYPpQummrmKaDw5Ka6QMEQ+We/Uo6xDEytFjN2jZ3jNOno3Mi7yWlTLg3VDAteHNGA7eBbMZ89Habl6xn8bg==}
+    cpu: [arm64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@vscode/vsce-sign-win32-x64@2.0.1:
+    resolution: {integrity: sha512-ofY1iXoXaNlM3zDt5jw7v59NMh0y2GvKrP4A74aUDJjaXaDd6n/hLaOpDLk4a+MjX6HWiEBr5yNqHGKYa+t2jg==}
+    cpu: [x64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@vscode/vsce-sign@2.0.3:
+    resolution: {integrity: sha512-NYktTVXYIjJ41CTfImuWLYSw2UoZwYYFk7VcVYTjTZnD7NnuaM3DizaFZfuRG5YMRT/oZa1t1d4bwzrBALR3VQ==}
+    requiresBuild: true
+    optionalDependencies:
+      '@vscode/vsce-sign-alpine-arm64': 2.0.1
+      '@vscode/vsce-sign-alpine-x64': 2.0.1
+      '@vscode/vsce-sign-darwin-arm64': 2.0.1
+      '@vscode/vsce-sign-darwin-x64': 2.0.1
+      '@vscode/vsce-sign-linux-arm': 2.0.1
+      '@vscode/vsce-sign-linux-arm64': 2.0.1
+      '@vscode/vsce-sign-linux-x64': 2.0.1
+      '@vscode/vsce-sign-win32-arm64': 2.0.1
+      '@vscode/vsce-sign-win32-x64': 2.0.1
+    dev: true
+
+  /@vscode/vsce@2.27.0:
+    resolution: {integrity: sha512-FFUMBVSyyjjJpWszwqk7d4U3YllY8FdWslbUDMRki1x4ZjA3Z0hmRMfypWrjP9sptbSR9nyPFU4uqjhy2qRB/w==}
     engines: {node: '>= 16'}
     hasBin: true
     dependencies:
       '@azure/identity': 4.2.0
+      '@vscode/vsce-sign': 2.0.3
       azure-devops-node-api: 12.5.0
       chalk: 2.4.2
       cheerio: 1.0.0-rc.12
@@ -1057,7 +1145,7 @@ packages:
     resolution: {integrity: sha512-H0TSyFNDMomMNJQBn8wFV5YC/2eJ+VXECwOadZJT554xP6cODZHPX3H9QMQECxvrgiSOP1pHjy1sMWQVYJOUOA==}
     engines: {node: '>= 14'}
     dependencies:
-      debug: 4.3.4
+      debug: 4.3.5
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -1352,6 +1440,18 @@ packages:
 
   /debug@4.3.4:
     resolution: {integrity: sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==}
+    engines: {node: '>=6.0'}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
+    dependencies:
+      ms: 2.1.2
+    dev: true
+
+  /debug@4.3.5:
+    resolution: {integrity: sha512-pt0bNEmneDIvdL1Xsd9oDQ/wrQRkXDT4AUWlNZNPKvW5x/jyO9VFXkJUP07vQ2upmw5PlaITaPKc31jK13V+jg==}
     engines: {node: '>=6.0'}
     peerDependencies:
       supports-color: '*'
@@ -1813,7 +1913,7 @@ packages:
     engines: {node: '>= 14'}
     dependencies:
       agent-base: 7.1.1
-      debug: 4.3.4
+      debug: 4.3.5
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -1823,7 +1923,7 @@ packages:
     engines: {node: '>= 14'}
     dependencies:
       agent-base: 7.1.1
-      debug: 4.3.4
+      debug: 4.3.5
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -2201,8 +2301,8 @@ packages:
     dev: true
     optional: true
 
-  /node-abi@3.62.0:
-    resolution: {integrity: sha512-CPMcGa+y33xuL1E0TcNIu4YyaZCxnnvkVaEXrsosR3FxN+fV8xvb7Mzpb7IgKler10qeMkE6+Dp8qJhpzdq35g==}
+  /node-abi@3.63.0:
+    resolution: {integrity: sha512-vAszCsOUrUxjGAmdnM/pq7gUgie0IRteCQMX6d4A534fQCR93EJU5qgzBvU6EkFfK27s0T3HEV3BOyJIr7OMYw==}
     engines: {node: '>=10'}
     requiresBuild: true
     dependencies:
@@ -2353,7 +2453,7 @@ packages:
       minimist: 1.2.8
       mkdirp-classic: 0.5.3
       napi-build-utils: 1.0.2
-      node-abi: 3.62.0
+      node-abi: 3.63.0
       pump: 3.0.0
       rc: 1.2.8
       simple-get: 4.0.1
