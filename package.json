@@ -10,7 +10,7 @@
   },
   "publisher": "fantasy",
   "engines": {
-    "vscode": "^1.60.0"
+    "vscode": "^1.100.0"
   },
   "categories": [],
   "keywords": [],
@@ -49,11 +49,11 @@
     ]
   },
   "devDependencies": {
-    "@0x-jerry/x-release": "^2.2.2",
-    "@types/node": "^22.0.0",
-    "@types/vscode": "^1.60.0",
-    "@vscode/vsce": "^3.0.0",
-    "tsup": "^8.0.2",
-    "typescript": "^5.4.5"
+    "@0x-jerry/x-release": "^2.4.0",
+    "@types/node": "^24.0.4",
+    "@types/vscode": "^1.100.0",
+    "@vscode/vsce": "^3.5.0",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3"
   }
 }
